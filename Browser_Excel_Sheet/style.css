@@ -1,23 +1,50 @@
 body{
-    margin: 0 auto;
+    margin:0px;
 }
 *{
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 .menu-container{
-    height: 10vh;
-    background-color: rgb(134, 134, 241);
-    display: flex;
+    height: 5rem;
+    border: 1px solid red;
 }
 .formula-container{
-    height: 5vh;
-    background-color: rgb(75, 114, 114);
+    height: 2rem;
+    border: 1px solid red;
 }
-.grid-container{
-    height: calc(100vh - (10vh + 5vh + 5vh));
-    background-color: rgb(190, 240, 240);
+.grid{
+    height: calc( 100vh - (5rem + 2rem + 2.5rem));
+    background-color: lightgreen;
 }
 .sheet-container{
-    height: 5vh;
-    background-color: bisque;
+    height: 2.5rem;
+    display: flex;
+}
+.icon-container{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+}
+.sheet-list{
+    width: 95%;
+    border: 1px solid;
+    display: flex;
+}
+.icon{
+    width: 1.2rem;
+    
+}
+.sheet{
+    border: 1px solid;
+    height: 100%;
+    width: 5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.7rem;
+    background-color: lightgray;
+}
+.active{
+    background-color: white;
 }
