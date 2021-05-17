@@ -11,12 +11,65 @@ body{
 }
 .formula-container{
     height: 2rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 238, 201);
+}
+.formula-container>*{
+    height: 74%;
+}
+.formula{
+    width: 74%;
+}
+.address{
+    width: 12%;
 }
 .grid-container{
     height: calc( 100vh - (5rem + 2rem + 2.5rem));
     background-color: lightgreen;
     overflow: auto;
+    position: relative;
+}
+.top-left-block{
+    padding-top: 0.2rem;
+    background-color: lightgray;
+}
+.block{
+    border: 1px solid;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+.top-row{
+    border: 1px solid;
+    display: flex;
+    top: 0px;
+    position: absolute;
+    left: 32px;
+}
+.left-col{
+    border: 1px solid;
+    position: absolute;
+}
+.grid{
+    border: 1px solid;
+    /* display: flex; */
+    position: absolute;
+    left: 32px;
+}
+.cell{
+    height: 2rem;
+    border: 1px solid;
+    min-width: 5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.row{
+    display: flex;
 }
 .sheet-container{
     height: 2.5rem;
@@ -51,37 +104,3 @@ body{
 .active{
     background-color: white;
 }
-.top-left-block{
-    padding-top: 0.2rem;
-    background-color: lightgray;
-}
-.block{
-    border: 1px solid;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-}
-.top-row{
-    border: 1px solid;
-    display: flex;
-    
-}
-.left-col{
-    border: 1px solid;
-}
-.grid{
-    border: 1px solid;
-    display: flex;
-}
-.cell{
-    height: 2rem;
-    border: 1px solid;
-    min-width: 5rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-.row{
-    display: flex;
-}
-
