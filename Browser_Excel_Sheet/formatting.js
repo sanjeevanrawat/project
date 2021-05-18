@@ -4,6 +4,7 @@ let underline = document.querySelector('.fa-underline');
 let fontSize = document.querySelector('.font-size');
 let fontFamily = document.querySelector('.font-family');
 let alignmentBtn = document.querySelectorAll('.alignment-container>*');
+let formulaBar = document.querySelector('.formula');
 bold.addEventListener('click' , function(){
     //get address from address bar
     let uiCell = getCell();
@@ -99,6 +100,8 @@ for(let i = 0; i < allCells.length; i++) {
                 alignmentBtn[j].classList.add('menu-active');
             }
         }
+        //when we click it first time its empty the formula bar because-> cellObj.formula = ''; after entering formula for it , it saves it in cellObj and shows that formula 
+        formulaBar.value = cellObj.formula;
     })
 }
 
