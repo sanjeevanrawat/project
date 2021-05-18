@@ -1,6 +1,5 @@
 .menu-container{
     height: 3rem;
-    border: 1px solid red;
     display: flex;
     align-items: center;
 }
@@ -28,9 +27,14 @@
 }
 .menu-icon{
     font-size: 130%;
+    color: grey;
+    font-weight: i;
 }
 .formatting-container,.alignment-container,.nos-container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.menu-active{
+    color: black;
 }

@@ -57,13 +57,16 @@ body{
     position: absolute;
     left: 32px;
 }
+.grid>*{
+    /* display: flex; */
+}
 .cell{
     height: 2rem;
     border: 1px solid;
     min-width: 5rem;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .row{
     display: flex;
