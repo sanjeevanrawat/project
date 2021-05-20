@@ -40,6 +40,7 @@ for (let i = 0; i < row; i++) {
             halign:'centre',
             value : "",
             formula : '',
+            children : [],
         }
         rowArr.push(cellObj);
     }
