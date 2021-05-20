@@ -16,7 +16,7 @@ for (let i = 0; i < row; i++) {
     div.classList.add('block');
     leftCol.appendChild(div);
 }
-let sheetArr = [];
+sheetArr = [];
 for (let i = 0; i < row; i++) {
     let row = document.createElement('div');
     let rowArr= [];
@@ -37,7 +37,9 @@ for (let i = 0; i < row; i++) {
             fontSize : 16,
             color : 'black',
             bgcolor : '',
-            halign:'centre'
+            halign:'centre',
+            value : "",
+            formula : '',
         }
         rowArr.push(cellObj);
     }
