@@ -105,7 +105,7 @@ function evaluateFormula(cFormula){
     }
     //making it String again (Before-> 2 * A1 : Now-> 2 * 10) 
     let finalFormula = formulaTokens.join(" ");
-    console.log(finalFormula);
+    // console.log(finalFormula);
     //this'll evaluate formula
     return eval(finalFormula);
 }

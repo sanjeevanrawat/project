@@ -5,6 +5,8 @@ let fontSize = document.querySelector('.font-size');
 let fontFamily = document.querySelector('.font-family');
 let alignmentBtn = document.querySelectorAll('.alignment-container>*');
 let formulaBar = document.querySelector('.formula');
+let allCells = document.querySelectorAll('.grid .cell');
+let addressElem = document.querySelector('.address');
 bold.addEventListener('click' , function(){
     //get address from address bar
     let uiCell = getCell();
@@ -132,3 +134,4 @@ for(let i = 0; i < alignmentBtn.length; i++){
         cellObj.halign = newAlignment;
     }
 }
+allCells[0].click();
