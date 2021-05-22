@@ -157,15 +157,15 @@ for (let i = 1; i <= rows; i++) {
     div.setAttribute("class", "block");
     leftCol.appendChild(div);
 }
-// array list 
+// array list -> contains sheetArr 
 let sheetListArr = [];
-// empty
+// empty sheetArr for global reference
 let sheetArr;
 let iconContainer = document.querySelector(".icon-container");
 let sheetList = document.querySelector(".sheet-list");
 let firstSheet = document.querySelector(".sheet");
-// trigger to make first sheet in db 
 firstSheet.addEventListener("click", handleClick);
+// trigger to make first sheet in db 
 firstSheet.click();
 // addenenvent listener
 iconContainer.addEventListener("click", function () {
@@ -203,8 +203,10 @@ function handleClick(e) {
         allSheets[i].classList.remove("active");
     }
     sheet.classList.add("active");
+    //getting idx of current sheet which is active
     let idx = sheet.getAttribute("idx");
     // db sheet change ui sync 
+    
     if (idx == 0 && sheetList.length == 0) {
         initSheetDB();
         //    for all operation
