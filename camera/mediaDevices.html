@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webCam</title>
+</head>
+<body>
+
+    <video controls autoplay></video>
+    <audio controls autoplay></audio>
+    <script>
+        let videoPlayer = document.querySelector('video');
+        let audioPlayer = document.querySelector('audio');
+        let constraints = {audio:true, video: true};
+        //getUserMedia asks permission for camera and microphone, it returns promise
+        //mediaDevices 
+        navigator.mediaDevices.getUserMedia(constraints).then(function(mediaStream){
+            //browser me video k source me play krne k liye srcObject me mediaStream daal diya
+            audioPlayer.srcObject = mediaStream;
+            videoPlayer.srcObject = mediaStream;
+        }).catch(function(err){
+            console.log(err);
+        })
+    </script>
+</body>
+</html>
